@@ -1,0 +1,21 @@
+CREATE TABLE weekly_sales (
+    id SERIAL PRIMARY KEY,
+    fiscal_week TEXT NOT NULL,
+    fiscal_week_end_date DATE NOT NULL,
+    supplier_num INT NOT NULL,
+    item_primary_part_number TEXT NOT NULL,
+    item_supplier_vpn TEXT NOT NULL,
+    item_number INT NOT NULL,
+    item_desc TEXT,
+    loc_number INT NOT NULL,
+    loc TEXT,
+    net_sales_qty FLOAT,
+    net_sales_cost FLOAT,
+    net_sales_amt FLOAT,
+    eoh_qty INT,
+    eoh_cost FLOAT,
+    eoh_retail FLOAT,
+    on_order_qty INT,
+    on_order_cost FLOAT,
+    on_order_retail FLOAT
+);
